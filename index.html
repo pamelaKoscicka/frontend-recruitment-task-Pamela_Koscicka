@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;600;800&family=Open+Sans:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <script defer src="./src/js/main.js"></script>
+    <title>Pamela Koscicka - Recruitment task</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="image">
+          <img
+            src="./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg"
+            alt="xyz"
+          />
+        </div>
+        <div class="small-container">
+          <div class="text">
+            <h1>Lorem Ipsum</h1>
+            <p>
+              Infinitely scalable, feature-ruch and cloud-native data management
+              and protection for modern and legacy infrastructures and SaaS
+              platforms, managed via a single app with no hardware required.
+            </p>
+            <button
+              data-modal-target="#popup"
+              class="button-click"
+              id="popClick"
+              onclick="clickCounter()"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup">
+        <div class="popup-header">
+          <div class="title">Alert!</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="popup-body">
+          You Have clicked
+          <span class="counter" id="counter"></span>
+          times to related button.
+        </div>
+
+        <button id="clearBtn" data-clear-target="#clearup" class="button-click" onclick="clearAll()">
+          Clear
+        </button>
+      </div>
+      <div id="overlay"></div>
+    </div>
+  </body>
+</html>
